@@ -50,7 +50,9 @@ namespace start
 
                 if (LabelsMap[indexRow, indexCol].Text == string.Empty)
                 {
-                    LabelsMap[indexRow, indexCol].Text = "2";
+                    // Generate 2 with 75% probability and 4 with 25% probability
+                    int numberToPlace = random.Next(100) < 75 ? 2 : 4;
+                    LabelsMap[indexRow, indexCol].Text = numberToPlace.ToString();
                     break;
                 }
             }
@@ -290,7 +292,7 @@ namespace start
                 }
             }
 
-            // Generate initial numbers
+            // Generate initial numbers with 75% chance of 2 and 25% chance of 4
             GenerateNumber();
             GenerateNumber();
         }
