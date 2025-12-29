@@ -1,0 +1,262 @@
+# Build results
+[Dd]ebug/
+[Dd]ebugPublic/
+[Rr]elease/
+[Rr]eleases/
+x64/
+x86/
+[Dd]ebug-*/
+[Rr]elease-*/
+bld/
+[Bb]uild/
+[Bb]uilds/
+[Bb]uildOutput/
+artifacts/
+bin/
+obj/
+[Oo]bj/
+
+# Visual Studio
+.vs/
+*.user
+*.userosscache
+*.suo
+*.csproj.user
+*.vbproj.user
+*.vcxproj.user
+*.vcxproj.filters
+*.vshost.exe
+*.vshost.exe.config
+*.vshost.exe.manifest
+*.vshost.exe.manifest.bak
+*.vshost.exe.pdb
+*.vshost.exe.xml
+*.vshost.exe.xml.bak
+
+# Visual Studio Code
+.vscode/
+
+# Rider
+.idea/
+*.DotSettings
+*.DotSettings.user
+*.ReSharper
+_ReSharper*/
+
+# Resharper
+*.[Rr]e[Ss]harper
+*.[Rr]e[Ss]harper.[Cc]ache
+*.[Rr]e[Ss]harper.[Cc]ode
+*.[Rr]e[Ss]harper.[Dd]e[Ss]ign
+*.[Rr]e[Ss]harper.[Ff]iles
+*.[Rr]e[Ss]harper.[Ss]olution
+*.[Rr]e[Ss]harper.[Cc]ache.[Cc]lient
+*.[Rr]e[Ss]harper.[Cc]ache.[Ss]erver
+*.[Rr]e[Ss]harper.[Cc]ode.[Cc]overage
+*.[Rr]e[Ss]harper.[Cc]ode.[Ii]nspection
+*.[Rr]e[Ss]harper.[Cc]ode.[Rr]eport
+*.[Rr]e[Ss]harper.[Cc]ode.[Tt]est
+*.[Rr]e[Ss]harper.[Cc]ode.[Uu]ser
+*.[Rr]e[Ss]harper.[Cc]ode.[Vv]ersion
+*.[Rr]e[Ss]harper.[Cc]ode.[Ww]orkspace
+*.[Rr]e[Ss]harper.[Cc]ode.[Xx]ml
+*.[Rr]e[Ss]harper.[Cc]ode.[Yy]aml
+*.[Rr]e[Ss]harper.[Cc]ode.[Zz]ip
+*.[Rr]e[Ss]harper.[Cc]ode.[Aa]rchive
+*.[Rr]e[Ss]harper.[Cc]ode.[Bb]ackup
+*.[Rr]e[Ss]harper.[Cc]ode.[Cc]onfig
+*.[Rr]e[Ss]harper.[Cc]ode.[Dd]ata
+*.[Rr]e[Ss]harper.[Cc]ode.[Ee]xport
+*.[Rr]e[Ss]harper.[Cc]ode.[Ff]ilter
+*.[Rr]e[Ss]harper.[Cc]ode.[Gg]enerated
+*.[Rr]e[Ss]harper.[Cc]ode.[Hh]istory
+*.[Rr]e[Ss]harper.[Cc]ode.[Ii]con
+*.[Rr]e[Ss]harper.[Cc]ode.[Jj]son
+*.[Rr]e[Ss]harper.[Cc]ode.[Kk]eys
+*.[Rr]e[Ss]harper.[Cc]ode.[Ll]og
+*.[Rr]e[Ss]harper.[Cc]ode.[Mm]ap
+*.[Rr]e[Ss]harper.[Cc]ode.[Nn]otes
+*.[Rr]e[Ss]harper.[Cc]ode.[Oo]ptions
+*.[Rr]e[Ss]harper.[Cc]ode.[Pp]roperties
+*.[Rr]e[Ss]harper.[Cc]ode.[Qq]uickfix
+*.[Rr]e[Ss]harper.[Cc]ode.[Rr]eport
+*.[Rr]e[Ss]harper.[Cc]ode.[Ss]ettings
+*.[Rr]e[Ss]harper.[Cc]ode.[Tt]emplate
+*.[Rr]e[Ss]harper.[Cc]ode.[Uu]ser
+*.[Rr]e[Ss]harper.[Cc]ode.[Vv]ersion
+*.[Rr]e[Ss]harper.[Cc]ode.[Ww]orkspace
+*.[Rr]e[Ss]harper.[Cc]ode.[Xx]ml
+*.[Rr]e[Ss]harper.[Cc]ode.[Yy]aml
+*.[Rr]e[Ss]harper.[Cc]ode.[Zz]ip
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+desktop.ini
+$RECYCLE.BIN/
+*.cab
+*.msi
+*.msix
+*.msm
+*.msp
+
+# IDE
+*.swp
+*.swo
+*~
+*.tmp
+
+# User-specific files
+.vsconfig
+appsettings.Development.json
+appsettings.Local.json
+secrets.json
+*.local.settings.json
+
+# Test results
+*.trx
+*.log
+**/TestResults/
+
+# NuGet
+packages/
+*.nupkg
+*.snupkg
+NuGet.exe
+NuGet.Config
+
+# .NET Core
+*.runtimeconfig.dev.json
+*.runtimeconfig.json.bak
+*.version
+**/project.lock.json
+**/project.assets.json
+**/Assets/fileidbaysfm.dat
+**/Assets/AssetStoreTools*
+
+# ASP.NET Core
+wwwroot/
+web.config
+
+# Publish
+publish/
+**/publish/
+
+# .NET Native
+*.ilproj
+*.ilproj.user
+*.ilproj.filters
+
+# Xamarin
+*.sln.docstates
+*.userprefs
+**/Xamarin.Android.Support.*
+**/Xamarin.Forms.Platform.Android.*
+
+# Unity
+Assets/AssetStoreTools*
+Library/
+Logs/
+Temp/
+Obj/
+Build/
+Builds/
+*.unityproj
+*.unitypackage
+[Oo]bjec[Bb]uild/
+[Oo]bjec[Tt]emp/
+[Oo]bjec[Ll]ogs/
+[Oo]bjec[Dd]ebug/
+[Oo]bjec[Rr]elease/
+
+# .NET MAUI
+**/Platforms/Android/obj/
+**/Platforms/Android/bin/
+**/Platforms/iOS/obj/
+**/Platforms/iOS/bin/
+**/Platforms/MacCatalyst/obj/
+**/Platforms/MacCatalyst/bin/
+**/Platforms/Tizen/obj/
+**/Platforms/Tizen/bin/
+**/Platforms/Windows/obj/
+**/Platforms/Windows/bin/
+
+# Other common files
+*.tmp
+*.temp
+*.bak
+*.cache
+*.cached
+*.log
+*.db
+*.db-shm
+*.db-wal
+*.lock
+*.swp
+*.swo
+*~
+
+# Environment specific files
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+.env.staging.local
+
+# Coverage results
+coverage/
+*.lcov
+*.coveragexml
+*.xml
+
+# Documentation
+doc/
+docs/
+
+# Package manager cache
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+jspm_packages/
+jspm.config.js
+
+# IDE specific files
+*.pidb
+*.sln.cache
+*.userprefs
+*.pidb.lock
+*.userosscache
+*.userosscache.bak
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon?
+._*
+.Spotlight-V100
+.Trashes
+.VolumeIcon.icns
+.com.apple.timemachine.donotpresent
+.com.apple.FinderInfo
+.apdisk
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Icon?
+Desktop.ini
+$RECYCLE.BIN/
+*.cab
+*.msi
+*.msix
+*.msm
+*.msp
+*.lnk
