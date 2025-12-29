@@ -16,6 +16,7 @@ namespace start
         {
             InitMap();
             GenerateNumber();
+            GenerateNumber();
             ShowScore();
         }
 
@@ -257,6 +258,47 @@ namespace start
 
             GenerateNumber();
             ShowScore();
+        }
+
+        private void NewGameToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            RestartGame();
+        }
+
+        private void ExitToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void RulesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ShowRules();
+        }
+
+        private void RestartGame()
+        {
+            // Reset score
+            score = 0;
+            ShowScore();
+
+            // Clear the board
+            for (int i = 0; i < mapSize; i++)
+            {
+                for (int j = 0; j < mapSize; j++)
+                {
+                    LabelsMap[i, j].Text = string.Empty;
+                }
+            }
+
+            // Generate initial numbers
+            GenerateNumber();
+            GenerateNumber();
+        }
+
+        private void ShowRules()
+        {
+            RulesForm rulesForm = new RulesForm();
+            rulesForm.ShowDialog();
         }
     }
 }
