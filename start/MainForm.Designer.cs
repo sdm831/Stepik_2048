@@ -35,6 +35,7 @@ namespace start
             this.toolStripSeparator1 = new ToolStripSeparator();
             this.exitToolStripMenuItem = new ToolStripMenuItem();
             this.helpToolStripMenuItem = new ToolStripMenuItem();
+            this.historyToolStripMenuItem = new ToolStripMenuItem();
             this.rulesToolStripMenuItem = new ToolStripMenuItem();
             label1 = new Label();
             scoreLabel = new Label();
@@ -85,10 +86,18 @@ namespace start
             // helpToolStripMenuItem
             //
             this.helpToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] {
+            this.historyToolStripMenuItem,
             this.rulesToolStripMenuItem});
             this.helpToolStripMenuItem.Name = "helpToolStripMenuItem";
             this.helpToolStripMenuItem.Size = new Size(83, 24);
             this.helpToolStripMenuItem.Text = "Справка";
+            //
+            // historyToolStripMenuItem
+            //
+            this.historyToolStripMenuItem.Name = "historyToolStripMenuItem";
+            this.historyToolStripMenuItem.Size = new Size(180, 26);
+            this.historyToolStripMenuItem.Text = "История";
+            this.historyToolStripMenuItem.Click += new EventHandler(this.HistoryToolStripMenuItem_Click);
             //
             // rulesToolStripMenuItem
             //
@@ -143,6 +152,7 @@ namespace start
         private ToolStripSeparator toolStripSeparator1;
         private ToolStripMenuItem exitToolStripMenuItem;
         private ToolStripMenuItem helpToolStripMenuItem;
+        private ToolStripMenuItem historyToolStripMenuItem;
         private ToolStripMenuItem rulesToolStripMenuItem;
         private Label label1;
         private Label scoreLabel;
