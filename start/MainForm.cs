@@ -18,6 +18,7 @@ namespace start
         {
             LoadBestScore();
             LoadGameHistory();
+            //RestartGame();
             InitMap();
             GenerateNumber();
             GenerateNumber();

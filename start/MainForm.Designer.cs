@@ -29,117 +29,117 @@ namespace start
         /// </summary>
         private void InitializeComponent()
         {
-            this.menuStrip1 = new MenuStrip();
-            this.gameToolStripMenuItem = new ToolStripMenuItem();
-            this.newGameToolStripMenuItem = new ToolStripMenuItem();
-            this.toolStripSeparator1 = new ToolStripSeparator();
-            this.exitToolStripMenuItem = new ToolStripMenuItem();
-            this.helpToolStripMenuItem = new ToolStripMenuItem();
-            this.historyToolStripMenuItem = new ToolStripMenuItem();
-            this.rulesToolStripMenuItem = new ToolStripMenuItem();
+            menuStrip1 = new MenuStrip();
+            gameToolStripMenuItem = new ToolStripMenuItem();
+            newGameToolStripMenuItem = new ToolStripMenuItem();
+            toolStripSeparator1 = new ToolStripSeparator();
+            exitToolStripMenuItem = new ToolStripMenuItem();
+            helpToolStripMenuItem = new ToolStripMenuItem();
+            historyToolStripMenuItem = new ToolStripMenuItem();
+            rulesToolStripMenuItem = new ToolStripMenuItem();
             label1 = new Label();
             scoreLabel = new Label();
-            this.menuStrip1.SuspendLayout();
+            настройкиToolStripMenuItem = new ToolStripMenuItem();
+            menuStrip1.SuspendLayout();
             SuspendLayout();
-            //
+            // 
             // menuStrip1
-            //
-            this.menuStrip1.ImageScalingSize = new Size(20, 20);
-            this.menuStrip1.Items.AddRange(new ToolStripItem[] {
-            this.gameToolStripMenuItem,
-            this.helpToolStripMenuItem});
-            this.menuStrip1.Location = new Point(0, 0);
-            this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new Size(319, 28);
-            this.menuStrip1.TabIndex = 2;
-            this.menuStrip1.Text = "menuStrip1";
-            //
+            // 
+            menuStrip1.ImageScalingSize = new Size(20, 20);
+            menuStrip1.Items.AddRange(new ToolStripItem[] { gameToolStripMenuItem, helpToolStripMenuItem });
+            menuStrip1.Location = new Point(0, 0);
+            menuStrip1.Name = "menuStrip1";
+            menuStrip1.Size = new Size(319, 28);
+            menuStrip1.TabIndex = 2;
+            menuStrip1.Text = "menuStrip1";
+            // 
             // gameToolStripMenuItem
-            //
-            this.gameToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] {
-            this.newGameToolStripMenuItem,
-            this.toolStripSeparator1,
-            this.exitToolStripMenuItem});
-            this.gameToolStripMenuItem.Name = "gameToolStripMenuItem";
-            this.gameToolStripMenuItem.Size = new Size(69, 24);
-            this.gameToolStripMenuItem.Text = "Игра";
-            //
+            // 
+            gameToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { newGameToolStripMenuItem, toolStripSeparator1, exitToolStripMenuItem, настройкиToolStripMenuItem });
+            gameToolStripMenuItem.Name = "gameToolStripMenuItem";
+            gameToolStripMenuItem.Size = new Size(57, 24);
+            gameToolStripMenuItem.Text = "Игра";
+            // 
             // newGameToolStripMenuItem
-            //
-            this.newGameToolStripMenuItem.Name = "newGameToolStripMenuItem";
-            this.newGameToolStripMenuItem.Size = new Size(180, 26);
-            this.newGameToolStripMenuItem.Text = "Новая игра";
-            this.newGameToolStripMenuItem.Click += new EventHandler(this.NewGameToolStripMenuItem_Click);
-            //
+            // 
+            newGameToolStripMenuItem.Name = "newGameToolStripMenuItem";
+            newGameToolStripMenuItem.Size = new Size(224, 26);
+            newGameToolStripMenuItem.Text = "Новая игра";
+            newGameToolStripMenuItem.Click += NewGameToolStripMenuItem_Click;
+            // 
             // toolStripSeparator1
-            //
-            this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new Size(177, 6);
-            //
+            // 
+            toolStripSeparator1.Name = "toolStripSeparator1";
+            toolStripSeparator1.Size = new Size(221, 6);
+            // 
             // exitToolStripMenuItem
-            //
-            this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
-            this.exitToolStripMenuItem.Size = new Size(180, 26);
-            this.exitToolStripMenuItem.Text = "Выход";
-            this.exitToolStripMenuItem.Click += new EventHandler(this.ExitToolStripMenuItem_Click);
-            //
+            // 
+            exitToolStripMenuItem.Name = "exitToolStripMenuItem";
+            exitToolStripMenuItem.Size = new Size(224, 26);
+            exitToolStripMenuItem.Text = "Выход";
+            exitToolStripMenuItem.Click += ExitToolStripMenuItem_Click;
+            // 
             // helpToolStripMenuItem
-            //
-            this.helpToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] {
-            this.historyToolStripMenuItem,
-            this.rulesToolStripMenuItem});
-            this.helpToolStripMenuItem.Name = "helpToolStripMenuItem";
-            this.helpToolStripMenuItem.Size = new Size(83, 24);
-            this.helpToolStripMenuItem.Text = "Справка";
-            //
+            // 
+            helpToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { historyToolStripMenuItem, rulesToolStripMenuItem });
+            helpToolStripMenuItem.Name = "helpToolStripMenuItem";
+            helpToolStripMenuItem.Size = new Size(81, 24);
+            helpToolStripMenuItem.Text = "Справка";
+            // 
             // historyToolStripMenuItem
-            //
-            this.historyToolStripMenuItem.Name = "historyToolStripMenuItem";
-            this.historyToolStripMenuItem.Size = new Size(180, 26);
-            this.historyToolStripMenuItem.Text = "История";
-            this.historyToolStripMenuItem.Click += new EventHandler(this.HistoryToolStripMenuItem_Click);
-            //
+            // 
+            historyToolStripMenuItem.Name = "historyToolStripMenuItem";
+            historyToolStripMenuItem.Size = new Size(153, 26);
+            historyToolStripMenuItem.Text = "История";
+            historyToolStripMenuItem.Click += HistoryToolStripMenuItem_Click;
+            // 
             // rulesToolStripMenuItem
-            //
-            this.rulesToolStripMenuItem.Name = "rulesToolStripMenuItem";
-            this.rulesToolStripMenuItem.Size = new Size(180, 26);
-            this.rulesToolStripMenuItem.Text = "Правила";
-            this.rulesToolStripMenuItem.Click += new EventHandler(this.RulesToolStripMenuItem_Click);
-            //
+            // 
+            rulesToolStripMenuItem.Name = "rulesToolStripMenuItem";
+            rulesToolStripMenuItem.Size = new Size(153, 26);
+            rulesToolStripMenuItem.Text = "Правила";
+            rulesToolStripMenuItem.Click += RulesToolStripMenuItem_Click;
+            // 
             // label1
-            //
+            // 
             label1.AutoSize = true;
             label1.Location = new Point(22, 40);
             label1.Name = "label1";
             label1.Size = new Size(47, 20);
             label1.TabIndex = 0;
             label1.Text = "Счет: ";
-            //
+            // 
             // scoreLabel
-            //
+            // 
             scoreLabel.AutoSize = true;
             scoreLabel.Location = new Point(75, 40);
             scoreLabel.Name = "scoreLabel";
             scoreLabel.Size = new Size(17, 20);
             scoreLabel.TabIndex = 1;
             scoreLabel.Text = "0";
-            //
+            // 
+            // настройкиToolStripMenuItem
+            // 
+            настройкиToolStripMenuItem.Name = "настройкиToolStripMenuItem";
+            настройкиToolStripMenuItem.Size = new Size(224, 26);
+            настройкиToolStripMenuItem.Text = "Настройки";
+            // 
             // MainForm
-            //
+            // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(319, 421);
             Controls.Add(scoreLabel);
             Controls.Add(label1);
-            Controls.Add(this.menuStrip1);
-            MainMenuStrip = this.menuStrip1;
+            Controls.Add(menuStrip1);
+            MainMenuStrip = menuStrip1;
             Margin = new Padding(4, 5, 4, 5);
             Name = "MainForm";
             Text = "2048";
             Load += Form1_Load;
             KeyDown += Form1_KeyDown;
-            this.menuStrip1.ResumeLayout(false);
-            this.menuStrip1.PerformLayout();
+            menuStrip1.ResumeLayout(false);
+            menuStrip1.PerformLayout();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -156,5 +156,6 @@ namespace start
         private ToolStripMenuItem rulesToolStripMenuItem;
         private Label label1;
         private Label scoreLabel;
+        private ToolStripMenuItem настройкиToolStripMenuItem;
     }
 }
