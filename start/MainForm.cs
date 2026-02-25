@@ -104,30 +104,40 @@ namespace start
         {
             var random = new Random();
 
-            while (true)
+            List<Label> emptyList = GetEmptyLabels();
+            var randomEmptyLabel = random.Next(emptyList.Count);
+
+            //todo переделать на перебор
+            // составить список пустых и из них выбрать рандомно
+
+            var randomNumber = random.Next(1, 101);
+
+            if (randomNumber <= 75)
             {
-                //todo переделать на перебор
-                // составить список пустых и из них выбрать рандомно
-                var randomNumberLabel = random.Next(mapSize * mapSize);
-                var indexRow = randomNumberLabel / mapSize;
-                var indexCol = randomNumberLabel % mapSize;
+                emptyList[randomEmptyLabel].Text = "2";
+            }
+            else
+            {
+                emptyList[randomEmptyLabel].Text = "2";
+            }
+        }
 
-                if (LabelsMap[indexRow, indexCol].Text == string.Empty)
+        private List<Label> GetEmptyLabels()
+        {
+            var emptyList = new List<Label>();
+
+            for (int i = 0; i < mapSize; i++)
+            {
+                for (int j = 0; j < mapSize; j++)
                 {
-                    var randomNumber = random.Next(1, 101);
-
-                    if (randomNumber <= 75)
+                    if (LabelsMap[i, j].Text == string.Empty)
                     {
-                        LabelsMap[indexRow, indexCol].Text = "2";
+                        emptyList.Add(LabelsMap[i, j]);
                     }
-                    else
-                    {
-                        LabelsMap[indexRow, indexCol].Text = "4";
-                    }
-
-                    break;
                 }
             }
+
+            return emptyList;
         }
 
         private Label CreateLabel(int indexRow, int indexColumn)
@@ -150,7 +160,7 @@ namespace start
         {
             var label = (Label)sender;
 
-            switch(label.Text)
+            switch (label.Text)
             {
                 case "": label.BackColor = SystemColors.ButtonShadow; break;
                 case "2": label.BackColor = Color.FromArgb(238, 228, 218); break;
@@ -163,7 +173,7 @@ namespace start
                 case "256": label.BackColor = Color.FromArgb(237, 204, 97); break;
                 case "512": label.BackColor = Color.FromArgb(237, 200, 80); break;
                 case "1024": label.BackColor = Color.FromArgb(237, 197, 63); break;
-                case "2048": label.BackColor = Color.FromArgb(237, 194, 46); break;                
+                case "2048": label.BackColor = Color.FromArgb(237, 194, 46); break;
             }
         }
 
