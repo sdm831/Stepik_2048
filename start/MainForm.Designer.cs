@@ -30,116 +30,128 @@ namespace start
         private void InitializeComponent()
         {
             menuStrip1 = new MenuStrip();
-            gameToolStripMenuItem = new ToolStripMenuItem();
-            newGameToolStripMenuItem = new ToolStripMenuItem();
-            toolStripSeparator1 = new ToolStripSeparator();
-            exitToolStripMenuItem = new ToolStripMenuItem();
-            helpToolStripMenuItem = new ToolStripMenuItem();
-            historyToolStripMenuItem = new ToolStripMenuItem();
-            rulesToolStripMenuItem = new ToolStripMenuItem();
-            label1 = new Label();
+            menuStrip2 = new MenuStrip();
+            файлToolStripMenuItem = new ToolStripMenuItem();
+            правилаToolStripMenuItem = new ToolStripMenuItem();
+            рестартToolStripMenuItem = new ToolStripMenuItem();
+            выходToolStripMenuItem = new ToolStripMenuItem();
+            показатьРезультатыToolStripMenuItem = new ToolStripMenuItem();
             scoreLabel = new Label();
-            настройкиToolStripMenuItem = new ToolStripMenuItem();
-            menuStrip1.SuspendLayout();
+            scoreResultLabel = new Label();
+            bestScoreResultLabel = new Label();
+            bestScoreLabel = new Label();
+            menuStrip2.SuspendLayout();
             SuspendLayout();
             // 
             // menuStrip1
             // 
             menuStrip1.ImageScalingSize = new Size(20, 20);
-            menuStrip1.Items.AddRange(new ToolStripItem[] { gameToolStripMenuItem, helpToolStripMenuItem });
-            menuStrip1.Location = new Point(0, 0);
+            menuStrip1.Location = new Point(0, 28);
             menuStrip1.Name = "menuStrip1";
-            menuStrip1.Size = new Size(319, 28);
+            menuStrip1.Size = new Size(319, 24);
             menuStrip1.TabIndex = 2;
             menuStrip1.Text = "menuStrip1";
             // 
-            // gameToolStripMenuItem
+            // menuStrip2
             // 
-            gameToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { newGameToolStripMenuItem, toolStripSeparator1, exitToolStripMenuItem, настройкиToolStripMenuItem });
-            gameToolStripMenuItem.Name = "gameToolStripMenuItem";
-            gameToolStripMenuItem.Size = new Size(57, 24);
-            gameToolStripMenuItem.Text = "Игра";
+            menuStrip2.ImageScalingSize = new Size(20, 20);
+            menuStrip2.Items.AddRange(new ToolStripItem[] { файлToolStripMenuItem, показатьРезультатыToolStripMenuItem });
+            menuStrip2.Location = new Point(0, 0);
+            menuStrip2.Name = "menuStrip2";
+            menuStrip2.Size = new Size(319, 28);
+            menuStrip2.TabIndex = 3;
+            menuStrip2.Text = "menuStrip2";
             // 
-            // newGameToolStripMenuItem
+            // файлToolStripMenuItem
             // 
-            newGameToolStripMenuItem.Name = "newGameToolStripMenuItem";
-            newGameToolStripMenuItem.Size = new Size(224, 26);
-            newGameToolStripMenuItem.Text = "Новая игра";
-            newGameToolStripMenuItem.Click += NewGameToolStripMenuItem_Click;
+            файлToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { правилаToolStripMenuItem, рестартToolStripMenuItem, выходToolStripMenuItem });
+            файлToolStripMenuItem.Name = "файлToolStripMenuItem";
+            файлToolStripMenuItem.Size = new Size(59, 24);
+            файлToolStripMenuItem.Text = "Файл";
             // 
-            // toolStripSeparator1
+            // правилаToolStripMenuItem
             // 
-            toolStripSeparator1.Name = "toolStripSeparator1";
-            toolStripSeparator1.Size = new Size(221, 6);
+            правилаToolStripMenuItem.Name = "правилаToolStripMenuItem";
+            правилаToolStripMenuItem.Size = new Size(153, 26);
+            правилаToolStripMenuItem.Text = "Правила";
+            правилаToolStripMenuItem.Click += правилаToolStripMenuItem_Click;
             // 
-            // exitToolStripMenuItem
+            // рестартToolStripMenuItem
             // 
-            exitToolStripMenuItem.Name = "exitToolStripMenuItem";
-            exitToolStripMenuItem.Size = new Size(224, 26);
-            exitToolStripMenuItem.Text = "Выход";
-            exitToolStripMenuItem.Click += ExitToolStripMenuItem_Click;
+            рестартToolStripMenuItem.Name = "рестартToolStripMenuItem";
+            рестартToolStripMenuItem.Size = new Size(153, 26);
+            рестартToolStripMenuItem.Text = "Рестарт";
+            рестартToolStripMenuItem.Click += рестартToolStripMenuItem_Click;
             // 
-            // helpToolStripMenuItem
+            // выходToolStripMenuItem
             // 
-            helpToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { historyToolStripMenuItem, rulesToolStripMenuItem });
-            helpToolStripMenuItem.Name = "helpToolStripMenuItem";
-            helpToolStripMenuItem.Size = new Size(81, 24);
-            helpToolStripMenuItem.Text = "Справка";
+            выходToolStripMenuItem.Name = "выходToolStripMenuItem";
+            выходToolStripMenuItem.Size = new Size(153, 26);
+            выходToolStripMenuItem.Text = "Выход";
+            выходToolStripMenuItem.Click += выходToolStripMenuItem_Click;
             // 
-            // historyToolStripMenuItem
+            // показатьРезультатыToolStripMenuItem
             // 
-            historyToolStripMenuItem.Name = "historyToolStripMenuItem";
-            historyToolStripMenuItem.Size = new Size(153, 26);
-            historyToolStripMenuItem.Text = "История";
-            historyToolStripMenuItem.Click += HistoryToolStripMenuItem_Click;
-            // 
-            // rulesToolStripMenuItem
-            // 
-            rulesToolStripMenuItem.Name = "rulesToolStripMenuItem";
-            rulesToolStripMenuItem.Size = new Size(153, 26);
-            rulesToolStripMenuItem.Text = "Правила";
-            rulesToolStripMenuItem.Click += RulesToolStripMenuItem_Click;
-            // 
-            // label1
-            // 
-            label1.AutoSize = true;
-            label1.Location = new Point(22, 40);
-            label1.Name = "label1";
-            label1.Size = new Size(47, 20);
-            label1.TabIndex = 0;
-            label1.Text = "Счет: ";
+            показатьРезультатыToolStripMenuItem.Name = "показатьРезультатыToolStripMenuItem";
+            показатьРезультатыToolStripMenuItem.Size = new Size(169, 24);
+            показатьРезультатыToolStripMenuItem.Text = "Показать результаты";
+            показатьРезультатыToolStripMenuItem.Click += показатьРезультатыToolStripMenuItem_Click;
             // 
             // scoreLabel
             // 
             scoreLabel.AutoSize = true;
-            scoreLabel.Location = new Point(75, 40);
+            scoreLabel.Location = new Point(10, 32);
             scoreLabel.Name = "scoreLabel";
-            scoreLabel.Size = new Size(17, 20);
-            scoreLabel.TabIndex = 1;
-            scoreLabel.Text = "0";
+            scoreLabel.Size = new Size(43, 20);
+            scoreLabel.TabIndex = 4;
+            scoreLabel.Text = "Счет:";
             // 
-            // настройкиToolStripMenuItem
+            // scoreResultLabel
             // 
-            настройкиToolStripMenuItem.Name = "настройкиToolStripMenuItem";
-            настройкиToolStripMenuItem.Size = new Size(224, 26);
-            настройкиToolStripMenuItem.Text = "Настройки";
+            scoreResultLabel.AutoSize = true;
+            scoreResultLabel.Location = new Point(58, 32);
+            scoreResultLabel.Name = "scoreResultLabel";
+            scoreResultLabel.Size = new Size(17, 20);
+            scoreResultLabel.TabIndex = 5;
+            scoreResultLabel.Text = "0";
+            // 
+            // bestScoreResultLabel
+            // 
+            bestScoreResultLabel.AutoSize = true;
+            bestScoreResultLabel.Location = new Point(240, 32);
+            bestScoreResultLabel.Name = "bestScoreResultLabel";
+            bestScoreResultLabel.Size = new Size(17, 20);
+            bestScoreResultLabel.TabIndex = 7;
+            bestScoreResultLabel.Text = "0";
+            // 
+            // bestScoreLabel
+            // 
+            bestScoreLabel.AutoSize = true;
+            bestScoreLabel.Location = new Point(96, 32);
+            bestScoreLabel.Name = "bestScoreLabel";
+            bestScoreLabel.Size = new Size(138, 20);
+            bestScoreLabel.TabIndex = 6;
+            bestScoreLabel.Text = "Лучший результат:";
             // 
             // MainForm
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(319, 421);
+            Controls.Add(bestScoreResultLabel);
+            Controls.Add(bestScoreLabel);
+            Controls.Add(scoreResultLabel);
             Controls.Add(scoreLabel);
-            Controls.Add(label1);
             Controls.Add(menuStrip1);
+            Controls.Add(menuStrip2);
             MainMenuStrip = menuStrip1;
             Margin = new Padding(4, 5, 4, 5);
             Name = "MainForm";
             Text = "2048";
             Load += Form1_Load;
             KeyDown += Form1_KeyDown;
-            menuStrip1.ResumeLayout(false);
-            menuStrip1.PerformLayout();
+            menuStrip2.ResumeLayout(false);
+            menuStrip2.PerformLayout();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -147,15 +159,15 @@ namespace start
         #endregion
 
         private MenuStrip menuStrip1;
-        private ToolStripMenuItem gameToolStripMenuItem;
-        private ToolStripMenuItem newGameToolStripMenuItem;
-        private ToolStripSeparator toolStripSeparator1;
-        private ToolStripMenuItem exitToolStripMenuItem;
-        private ToolStripMenuItem helpToolStripMenuItem;
-        private ToolStripMenuItem historyToolStripMenuItem;
-        private ToolStripMenuItem rulesToolStripMenuItem;
-        private Label label1;
+        private MenuStrip menuStrip2;
+        private ToolStripMenuItem файлToolStripMenuItem;
+        private ToolStripMenuItem правилаToolStripMenuItem;
+        private ToolStripMenuItem рестартToolStripMenuItem;
+        private ToolStripMenuItem выходToolStripMenuItem;
+        private ToolStripMenuItem показатьРезультатыToolStripMenuItem;
         private Label scoreLabel;
-        private ToolStripMenuItem настройкиToolStripMenuItem;
+        private Label scoreResultLabel;
+        private Label bestScoreResultLabel;
+        private Label bestScoreLabel;
     }
 }
