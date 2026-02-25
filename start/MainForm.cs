@@ -106,6 +106,8 @@ namespace start
 
             while (true)
             {
+                //todo переделать на перебор
+                // составить список пустых и из них выбрать рандомно
                 var randomNumberLabel = random.Next(mapSize * mapSize);
                 var indexRow = randomNumberLabel / mapSize;
                 var indexCol = randomNumberLabel % mapSize;
