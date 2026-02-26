@@ -179,6 +179,8 @@ namespace start
 
         private void Form1_KeyDown(object sender, KeyEventArgs e)
         {
+            var isMoved = false;
+
             if (e.KeyCode != Keys.Right && e.KeyCode != Keys.Left && e.KeyCode != Keys.Up && e.KeyCode != Keys.Down)
             {
                 return;
@@ -186,22 +188,27 @@ namespace start
 
             if (e.KeyCode == Keys.Right)
             {
-                MoveRight();
+                isMoved = MoveRight();
             }
 
             if (e.KeyCode == Keys.Left)
             {
-                MoveLeft();
+                isMoved = MoveLeft();
             }
 
             if (e.KeyCode == Keys.Up)
             {
-                MoveUp();
+                isMoved = MoveUp();
             }
 
             if (e.KeyCode == Keys.Down)
             {
-                MoveDown();
+                isMoved = MoveDown();
+            }
+
+            if (!isMoved)
+            {
+                return;
             }
 
             GenerateNumber();
@@ -223,8 +230,10 @@ namespace start
             }
         }
 
-        private void MoveDown()
+        private bool MoveDown()
         {
+            bool moved = false;
+
             for (int j = 0; j < mapSize; j++)
             {
                 for (int i = mapSize - 1; i >= 0; i--)
@@ -241,6 +250,7 @@ namespace start
                                     LabelsMap[i, j].Text = (number * 2).ToString();
                                     score += number * 2;
                                     LabelsMap[k, j].Text = string.Empty;
+                                    moved = true;
                                     break;
                                 }
                             }
@@ -261,16 +271,20 @@ namespace start
                             {
                                 LabelsMap[i, j].Text = LabelsMap[k, j].Text;
                                 LabelsMap[k, j].Text = string.Empty;
+                                moved = true;
                                 break;
                             }
                         }
                     }
                 }
             }
+            return moved;
         }
 
-        private void MoveUp()
+        private bool MoveUp()
         {
+            bool moved = false;
+
             for (int j = 0; j < mapSize; j++)
             {
                 for (int i = 0; i < mapSize; i++)
@@ -287,6 +301,7 @@ namespace start
                                     LabelsMap[i, j].Text = (number * 2).ToString();
                                     score += number * 2;
                                     LabelsMap[k, j].Text = string.Empty;
+                                    moved = true;
                                     break;
                                 }
                             }
@@ -307,16 +322,20 @@ namespace start
                             {
                                 LabelsMap[i, j].Text = LabelsMap[k, j].Text;
                                 LabelsMap[k, j].Text = string.Empty;
+                                moved = true;
                                 break;
                             }
                         }
                     }
                 }
             }
+            return moved;
         }
 
-        private void MoveLeft()
+        private bool MoveLeft()
         {
+            bool moved = false;
+
             for (int i = 0; i < mapSize; i++)
             {
                 for (int j = 0; j < mapSize; j++)
@@ -333,6 +352,7 @@ namespace start
                                     LabelsMap[i, j].Text = (number * 2).ToString();
                                     score += number * 2;
                                     LabelsMap[i, k].Text = string.Empty;
+                                    moved = true;
                                     break;
                                 }
                             }
@@ -353,16 +373,20 @@ namespace start
                             {
                                 LabelsMap[i, j].Text = LabelsMap[i, k].Text;
                                 LabelsMap[i, k].Text = string.Empty;
+                                moved = true;
                                 break;
                             }
                         }
                     }
                 }
             }
+            return moved;
         }
 
-        private void MoveRight()
+        private bool MoveRight()
         {
+            bool moved = false;
+
             for (int i = 0; i < mapSize; i++)
             {
                 for (int j = mapSize - 1; j >= 0; j--)
@@ -379,6 +403,7 @@ namespace start
                                     LabelsMap[i, j].Text = (number * 2).ToString();
                                     score += number * 2;
                                     LabelsMap[i, k].Text = string.Empty;
+                                    moved = true;
                                     break;
                                 }
                             }
@@ -399,12 +424,15 @@ namespace start
                             {
                                 LabelsMap[i, j].Text = LabelsMap[i, k].Text;
                                 LabelsMap[i, k].Text = string.Empty;
+                                moved = true;
                                 break;
                             }
                         }
                     }
                 }
             }
+
+            return moved;
         }
 
         private bool Win()
